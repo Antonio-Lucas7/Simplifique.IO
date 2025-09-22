@@ -1,0 +1,26 @@
+.meth3 {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    
+    /*text-decoration: none; /* tira o sublinhado */
+    /*color: inherit;        /* mantém a cor original do texto */
+    /*Display: block;        /* faz o link ocupar toda a área do card */
+}
+
+.metp {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.feature-card,  /*tira a poha do sublinhado e link azul na MARRA*/
+.feature-card:hover,
+.feature-card:visited {
+  text-decoration: none;
+  color: inherit;
+}
