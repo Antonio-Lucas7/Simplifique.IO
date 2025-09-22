@@ -35,7 +35,28 @@
             </div>
             <button class="btn btn-back" onclick="goBack()">← Voltar ao Vocabulário</button>
         </div>
-
+        <!-- Área do Quiz -->
+        <div class="question-area" id="question-area">
+            <div class="question-card">
+                <div class="question-type" id="question-type">Gramática</div>
+                <h3 class="question-text" id="question-text">Carregando pergunta...</h3>
+                        
+                <!-- Área para diferentes tipos de questão -->
+                <div class="answer-area" id="answer-area">
+                    <!-- Será preenchido dinamicamente -->
+                </div>
+                        
+                <div class="question-help" id="question-help" style="display: none;">
+                    <div class="help-icon">💡</div>
+                    <div class="help-text" id="help-text"></div>
+                </div>
+            </div>
+                    
+            <div class="feedback-area" id="feedback-area" style="display: none;">
+                <div class="feedback-content" id="feedback-content"></div>
+                <button class="btn btn-next" onclick="nextQuestion()">Próxima Questão</button>
+            </div>
+        </div>
         <!-- Painel de Conquistas -->
         <div class="achievements-panel">
             <h3>🏆 Suas Conquistas</h3>
@@ -87,28 +108,7 @@
                     <div class="progress-text">Questão <span id="question-number">1</span> de <span id="total-questions">10</span></div>
                 </div>
 
-                <!-- Área do Quiz -->
-                <div class="question-area" id="question-area">
-                    <div class="question-card">
-                        <div class="question-type" id="question-type">Gramática</div>
-                        <h3 class="question-text" id="question-text">Carregando pergunta...</h3>
-                        
-                        <!-- Área para diferentes tipos de questão -->
-                        <div class="answer-area" id="answer-area">
-                            <!-- Será preenchido dinamicamente -->
-                        </div>
-                        
-                        <div class="question-help" id="question-help" style="display: none;">
-                            <div class="help-icon">💡</div>
-                            <div class="help-text" id="help-text"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="feedback-area" id="feedback-area" style="display: none;">
-                        <div class="feedback-content" id="feedback-content"></div>
-                        <button class="btn btn-next" onclick="nextQuestion()">Próxima Questão</button>
-                    </div>
-                </div>
+                
 
                 <!-- Explicação da IA -->
                 <div class="ai-explanation" id="ai-explanation" style="display: none;">
